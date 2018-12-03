@@ -6,6 +6,20 @@
 	<link rel="stylesheet" type="text/css" href="clark_properties.css">
 	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed" rel="stylesheet">
 	<script src="https://use.fontawesome.com/dccb3cd2fc.js"></script>
+  <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $(".slideDown1").hide();
+          $("#dropButton").on("click",function(){
+            $(".slideDown1").slideToggle(1000);
+          });
+        });
+   
+</script>
 </head>
    <body>
    	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -41,16 +55,11 @@
 				<h1>Clark Property Management</h1>
 					<h3>Serving the Tri-State Area Since 1998</h3>
 					 <hr>
-					<button class="btn btn-default btn-lg"><i class="fa fa-mouse-pointer" aria-hidden="true"></i> More Info!</button>
+					<button class="btn btn-default btn-lg" id="dropButton"><i class="fa fa-mouse-pointer" aria-hidden="true"></i> More Info!</button>
+          <div class="slideDown1">Adding content with the jQuery function slideToggle is an effective way to add dynamic content to your webpage. This was done using the .on event listener in this example. The button is a btn-default from Bootstrap with a Font Awesome icon preceding the call to action text.</div>
 				</div>
 			</div>
 		</div>
 	</div>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
 </body>
 </html>

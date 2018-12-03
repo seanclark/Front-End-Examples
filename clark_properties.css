@@ -1,9 +1,10 @@
 body {
-	background: url("https://images.unsplash.com/photo-1493540531675-23bf380ab96f?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=chuttersnap-248909.jpg&s=ad7a462bdb207f17d9ec3d09d5790dbb,");
+	background: url("https://images.unsplash.com/photo-1493540531675-23bf380ab96f?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&dl=chuttersnap-248909.jpg&s=ad7a462bdb207f17d9ec3d09d5790dbb,") no-repeat;
 	background-size:  cover;
 	background-position: center;
 	font-family: 'Encode Sans Condensed', sans-serif;
 	color: white;
+	letter-spacing: .1em;
 }
 
 html {
@@ -16,9 +17,15 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+.slideDown1 {
+	font-size: 20px;
+	text-align: left;
+	padding-top: 40px;
+}
+
 #content {
 	text-align: center;
-	padding-top: 20%;
+	padding-top: 25%;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 6px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
@@ -27,6 +34,14 @@ hr {
 h1 {
 	font-weight: 700;
 	font-size: 4em;
+}
+
+.navbar {
+	font-size: 1.2em;
+}
+
+.navbar-brand {
+	font-size: 1em;
 }
 
 
