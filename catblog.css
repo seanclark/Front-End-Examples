@@ -1,0 +1,112 @@
+body {
+  border: 20px solid #BDC3C7;
+  font-family: Source Sans Pro;
+  max-width: 700px;
+  width: 80%;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.dateblog {
+  color: #3498DB;
+  font-weight: 400;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 20px;
+  letter-spacing: 0.2rem;
+}
+
+#title {
+  color: #2C3E50;
+  border-bottom: 2px solid black;
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#title a {
+  text-decoration: none;
+  color: #2C3E50;
+}
+
+#title a:hover {
+  color: blue;
+}
+
+h2 {
+ color: #2C3E50;
+ font-weight: 700;
+ font-size: 28px;
+}
+
+p a {
+  text-decoration: none;
+  padding-left: 10px;
+}
+#logoimg img {
+  height: 124px;
+  width: 124px;
+  float: left;
+}
+
+#smalltitle {
+  color: #2C3E50;
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+#demo {
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  color: #3498DB;
+}
+
+.quote {
+  border-left: 5px solid #BDC3C7;
+  padding-left: 5px;
+}
+
+.quote a {
+  text-decoration: none;
+  color: #3498DB;
+}
+
+#articleimg img {
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  max-width: 50%;
+}
+
+#articleimg2 img {
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  max-width: 50%;
+  margin-left: 25%;
+}
+
+#articleimg3 img {
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
+  max-width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.content {
+  padding: 8px;
+  text-indent: 45px;
+}
+
+p {
+  text-align: left;
+}
