@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="bmicalc.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+        <a class="nav-link" href="#">CALCULATE YOUR BMI</a>
+        </li>
+      </ul>
+    </div>
+    </nav>
+  </div>
+      <!-- navbar end -->
+<!-- <div id="backimg"></div> -->
+<div class="container">
+    <h2>BMI Calculator</h2><br>
+    <div class="row">
+      <div class="col-sm">
+        <form id="bmiForm">
+          Height feet:<br>
+          <input type="number" id="myNumber1" placeholder="Enter height Feet"><br><br>
+          Height inches:<br>
+          <input type="number" id="myNumber2" placeholder="Enter height inches"><br><br>
+          Weight:<br>
+          <input type="number" id="myNumber3" placeholder="Enter weight"><br><br><br>
+          <button type="button" class="btn btn-info" onclick="calcBmi()">Calculate your BMI</button>
+          <button type="button" class="btn btn-info" onclick="resetBmi()">Reset</button><br>
+          <hr>
+          <p id="displayBmi"></p>
+        </form>
+      </div>
+      <div class="col-sm">
+       <img src="sizes.jpeg" alt="people">
+      </div>
+    </div>
+  </div>
+
+<!-- begin javascript -->
+    <script>
+      //function to calculate the bmi numbers inputed
+    function calcBmi() {
+      var heightFeet = document.getElementById("myNumber1").value;
+      var heightInch = document.getElementById("myNumber2").value;
+      //calculates the total height in feet and inches
+      var heightTotal = (parseInt(heightFeet) * 12)+ parseInt(heightInch);
+      var weight = document.getElementById("myNumber3").value;
+      document.getElementById("displayBmi").innerHTML =
+      "Your body mass index number (BMI) is: " + Math.round((weight/Math.pow(heightTotal, 2) * 703));
+      }
+    var bmiDisplay = document.getElementById("displayBmi");
+    function resetBmi() {
+      document.getElementById("bmiForm").reset();
+      bmiDisplay.textContent = null;
+    }
+    </script>
+  </body>
+</html>

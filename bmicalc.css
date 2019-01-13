@@ -1,0 +1,40 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  /* background-image: url(sizes.jpeg); */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+button {
+  float: left;
+}
+
+#btn {
+  padding: 15px;
+}
+
+hr {
+  border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+  width: 25%;
+  float: left;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+  font-size: 20px;
+  float: left;
+}
