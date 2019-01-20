@@ -1,0 +1,13 @@
+p {
+  color: #D63F0F;
+}
+
+div.container {
+  margin-top: 60px;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  background-repeat: no-repeat;
+  background-position: right;
+}
